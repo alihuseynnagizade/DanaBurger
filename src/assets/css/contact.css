@@ -1,0 +1,332 @@
+.head-c{
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(0.25turn,#0d0e10,#0f1515,#384243); 
+    z-index: 1;
+    position: relative;
+}
+.div-bar-c{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar-c{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar-c div{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.danaburger-head-logo-c{
+    width: 9em;
+    margin-left: 2em;
+    cursor: pointer;
+    -webkit-user-drag: none;
+}
+.list-menu-c{
+    display: flex;
+}
+.list-item-c{
+    list-style: none;
+    /* font-size: 1.1em;
+    padding-right: 2em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s; */
+}  
+.link-item-c{
+    list-style: none;
+    font-size: 1.1em;
+    padding-right: 2.3em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.link-item1-c {
+    list-style: none;
+    font-size: 1.1em;
+    padding-right: 2.3em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #f6921f;
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.link-item-c:hover{
+    color: #f6921f;
+}
+.list-item-c:hover{
+    color: #f6921f;
+    /* text-shadow: 0px 0px 12px #f6921f; */
+}
+  
+
+  
+  
+.OnlineZakaz-btn-c{
+    width: 9em;
+    height: 2.4em;
+    font-size: 1em;
+    margin-left: 9em;
+    border-radius: 20px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+    background-color: #f6921f;
+    color: white;
+    transition: 0.6s;
+}
+.OnlineZakaz-btn-c:hover{
+    background-color: #dc3b20;
+    box-shadow: 0px 0px 20px #dc3b20;
+}
+.head-icon-c{
+    transition: 0.3s;
+    color:"white";
+    font-size:"1.2em";
+    margin-left:"5em";
+    cursor:"pointer";
+    color: white;
+    cursor: pointer;
+}
+
+.head-icon-c:hover{
+    color: #f6921f;
+}
+
+
+
+
+.booking-section {
+  /* padding: 2em; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 25em;
+  /* background-color: red; */
+  height: 32em;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 7em;
+}
+
+.booking-form {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 32em; 
+  box-sizing: border-box;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+  padding: 0.75em;
+  font-size: 1em;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0.5em;
+  transition: 0.2s;
+}
+.booking-form input,
+.booking-form select{
+    border: 1px solid #f6921f;
+}
+.booking-form input:focus,
+.booking-form select:focus{
+    border: 1px solid #dc3b20;
+    outline: 1px solid #dc3b20;
+    box-shadow: 0px 0px 10px #dc3b20;
+}
+.booking-form button {
+  background-color: #f6921f;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 20px;
+  border: none;
+  width: 10em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.booking-form button:hover {
+  background-color: #dc3b20;
+  box-shadow: 0px 0px 20px #dc3b20;
+}
+
+.map-container {
+  /* flex: 1 1 45%; */
+  height: 32em; /* Xəritənin də eyni boyda olması üçün */
+  border-radius: 1em;
+  margin-bottom: 3.5em;
+  width: 50%;
+  margin-left: 3em;
+  overflow: hidden;
+  height: 27em;
+  border: 3px solid #f6921f;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.date-input{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.input-email{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.tel-ad-input{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.form-title-c{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 3.4em;
+    position: absolute;
+    top: 3em;
+    color: #f6921f;
+    text-shadow: 0px 0px 10px #f6921f;
+}
+
+
+
+
+.foot{
+    width: 100%;
+    height: 35vh;
+    background: linear-gradient(0.25turn,#0d0e10,#0f1515,#384243); 
+    display: flex;
+}
+.div-forfoot{
+    width: 33.5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.div-forfoot h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    padding-bottom: 0.3em;
+    color: white;
+}
+.div-forfoot h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    text-align: center;
+    color: rgb(194, 194, 194);
+}
+.div-for-icons{
+    width: 80%;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    margin-left: 3em;
+}
+.location-icon{
+    font-size: 0.8em;
+}
+.call-icon{
+    font-size: 0.9em;
+}
+.ig-icon{
+    font-size: 0.8em;
+}
+.elaqe-txts{
+    cursor: pointer;
+    padding-top: 0.3em;
+}
+.elaqe-txts:hover{
+    color: #f6921f;
+}
+.div-for-icons div{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+.bolt{
+    background-image: url('unnamed.png');
+    background-size: 100%;
+}
+.bolt:hover{
+    background-image: url('Bolt_logo.png');
+    background-repeat: no-repeat;
+    background-size: 72%;
+    background-position: 50% 55%;
+    background-color: white;
+}
+.wolt{
+    background-image: url('wolt-logo.png');
+    background-size: 100%;
+}
+.wolt:hover{
+    background-image: url('wolt-logo-png_seeklogo-499957.png');
+    background-color: white;
+    background-size: 80%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.insta-foot{
+    background-image: url('instagram-logo_1199-122.avif');
+    background-size: 100%;
+}
+.insta-foot:hover{
+    background-image: url('1658586823instagram-logo-transparent.webp');
+    background-size: 44%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: white;
+}

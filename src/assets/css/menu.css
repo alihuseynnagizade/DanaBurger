@@ -1,0 +1,499 @@
+.head-m{
+    width: 100%;
+    height: 95.9vh;
+    background: linear-gradient(0.25turn,#0d0e10,#0f1515,#384243); 
+    background-size: 100% 100%;
+    z-index: 1;
+    position: relative;
+}
+.div-bar-m{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar-m{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar-m div{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.danaburger-head-logo-m{
+    width: 9em;
+    margin-left: 2em;
+    cursor: pointer;
+    -webkit-user-drag: none;
+}
+.list-menu-m{
+    display: flex;
+}
+.list-item-m{
+    list-style: none;
+    /* font-size: 1.1em;
+    padding-right: 2em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s; */
+}  
+.link-item-m{
+    list-style: none;
+    font-size: 1.1em;
+    padding-right: 2.3em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.link-item1-m{
+    list-style: none;
+    font-size: 1.1em;
+    padding-right: 2.3em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #f6921f;
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.link-item-m:hover{
+    color: #f6921f;
+}
+.list-item-m:hover{
+    color: #f6921f;
+    /* text-shadow: 0px 0px 12px #f6921f; */
+}
+  
+
+  
+  
+.OnlineZakaz-btn-m{
+    width: 9em;
+    height: 2.4em;
+    font-size: 1em;
+    margin-left: 9em;
+    border-radius: 20px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+    background-color: #f6921f;
+    color: white;
+    transition: 0.6s;
+}
+.OnlineZakaz-btn-m:hover{
+    background-color: #dc3b20;
+    box-shadow: 0px 0px 20px #dc3b20;
+}
+.head-icon-m{
+    transition: 0.3s;
+    color:"white";
+    font-size:"1.2em";
+    margin-left:"5em";
+    cursor:"pointer";
+    color: white;
+    cursor: pointer;
+}
+
+.head-icon-m:hover{
+    color: #f6921f;
+}
+
+
+
+
+
+.menu-preview-section-m{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(0.25turn,#0d0e10,#384243); */
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-prev-title-div{
+    width: 40%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-prev-title-div h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 3.4em;
+    color: white;
+    padding-top: 1em;
+    text-shadow: 0px 0px 28px white;
+}
+.menu-prev-title-div p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    padding-top: 0.5em;
+}
+.menu-prev-div{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+.helper-div img{
+    width: 16.666%;
+    height: 90%;
+    margin-top: 1.55em;
+    cursor: pointer;
+    -webkit-user-drag: none;
+
+}
+.helper-div div{
+    width: 16.666%;
+    height: 90%;
+    margin-top: 1.55em;
+    background-color: rgba(255, 255, 255, 0.082);
+}
+.helper-div div h1{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+.helper-div div p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 1.5em;
+}
+.helper-div{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    margin-top: 2em;
+}
+.helper-div div nav{
+    width: 100%;
+    height: 30%;
+}
+.helper-div div nav{
+    display: flex;
+}
+.helper-div div nav button{
+    width: 5em;
+    height: 2em;
+    margin-top: 1.1em;
+    margin-left: 1em;
+    border: 2px solid #f6921f;
+    background-color: transparent;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.helper-div div nav button:hover{
+    background-color: #f6921f;
+    box-shadow: 0px 0px 10px #f6921f;
+}
+.helper-div div nav p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 1em;
+}
+.helper-div2{
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+.helper-div2 img{
+    width: 16.666%;
+    height: 90%;
+    cursor: pointer;
+    -webkit-user-drag: none;
+
+}
+.helper-div2 div{
+    width: 16.666%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.082);
+}
+.helper-div2 div h1{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+.helper-div2 div p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 1.5em;
+}
+.helper-div2 div nav{
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+.helper-div2 div nav button{
+    width: 5em;
+    height: 2em;
+    margin-top: 1.1em;
+    margin-left: 1em;
+    border: 2px solid #f6921f;
+    background-color: transparent;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.helper-div2 div nav button:hover{
+    background-color: #f6921f;
+    box-shadow: 0px 0px 10px #f6921f;
+}
+.helper-div2 div nav p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 1em;
+}
+.nav-helper{
+    margin-top: 1.5em;
+}
+
+
+
+.menu-section{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(0.25turn,#0d0e10,#0f1515,#384243);  */
+        background-image: url('Adsız tasarım (19).png');
+
+
+}
+.menu-container {
+  color: white;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.menu-title {
+  margin-bottom: 0.5rem;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 3.4em;
+  margin-top: 0.6em;
+  text-shadow: 0px 0px 28px white;
+}
+
+.menu-description {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  font-style: normal;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  margin-top: 1em;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed #ffc107;
+  padding-top: 1rem;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.item-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 23px #f6921f;
+}
+
+.item-name {
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.item-desc {
+  color: #aaa;
+  font-size: 0.875rem;
+  margin: 0.25rem 0 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  /* font-size: 1em; */
+  font-style: normal;
+}
+
+.item-price {
+  font-weight: 600;
+  color: #f6921f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  padding-left: 1em;
+  font-style: normal;
+}
+
+
+
+.gallery-container {
+  display: flex;
+  gap: 2em;
+}
+
+.button-gallery{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  gap: 2em;
+}
+.left-image {
+  /* flex: 1; */
+  width: 26em;
+}
+
+.left-image img {
+  width: 100%;
+  height: 100%;
+  /* height: auto; */
+  /* margin: 0 */
+  /* border-radius: 12px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+  margin-top: 3em;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  /* padding: 10px 16px; */
+  width: 8em;
+  height: 3em;
+  border: none;
+  background-color: #ffb73b;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  transition: 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #f8a414;
+}
+
+.buttons button.active {
+  background-color: #dc3b20;
+  box-shadow: 0px 0px 20px #dc3b20;
+  color: white;
+}
+
+.images {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.images img {
+  /* width: calc(33.333% - 10px); */
+  width: 20em;
+  height: 15em;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+.food-info h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  font-style: normal;
+  text-align: center;
+  padding-top: 0.5em;
+}
+.food-info h3{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  font-style: normal;
+  text-align: center;
+  color: #dc3b20;
+  padding-top: 0.2em;
+}
