@@ -237,7 +237,7 @@ const Home = () => {
           onSubmit={handleSubmit}
           className="booking-form"
         >
-          <h1 className="form-title">Rezerv Et</h1>
+          <h1 className="form-title-1">Rezerv Et</h1>
 
           <input type="text" name="name" placeholder="Adınız" required />
           <input type="tel" name="phone" placeholder="Telefon Nömrəsi" required />
