@@ -1,4 +1,4 @@
-.head{
+.head-h{
     width: 100%;
     height: 100vh;
     background-image: url('Adsız tasarım (11).png');
@@ -886,4 +886,258 @@
     background-repeat: no-repeat;
     background-position: 50%;
     background-color: white;
+}
+
+
+#menu-button{
+    display: none;
+}
+
+@media (max-width: 1025px) {
+    #hideOnMobile{
+        display: none;
+    }
+    #menu-button{
+        display: block;
+    }
+    .head-h{
+        height: 60vh;
+    }
+    .container-1 h1{
+        padding-top: 0;
+        padding-left: 1em;
+    }
+    .container-1 p{
+        padding-left: 4em;
+    }
+    .container-1 button{
+        margin-left: 3.3em;
+    }
+    .blog-div{
+        height: 25em;
+    }
+    .form-title-1{
+        top: 102em;
+    }
+}
+@media (max-width: 821px) {
+    .about-prev-img-div{
+        height: 35%;
+        width: 100%;
+        img{
+            width: 15em;
+            margin: auto;
+        }
+    }
+    .about-prev-title{
+        height: 50%;
+        width: 100%;
+        h1{
+            padding-left: 1em;
+        }
+        p{
+            padding-left: 3.5em;
+        }
+        button{
+            margin-left: 2.5em;
+        }
+    }
+    .about-prev-section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-haqda-div h3{
+        font-size: 1.2em;
+    }
+    .menu-haqda-div p{
+        font-size: 0.8em;
+    }
+    .blog-div{
+        height: 60%;
+        flex-wrap: wrap;
+        /* flex-direction: column;  */
+        #last-blog{
+            margin-left: 12.5em;
+            margin-top: 0;
+        }
+        button{
+            margin-top: 5em;
+        }
+        div{
+            height: 14em;
+            width: 28%;
+            /* margin-left: 5em; */
+        }
+    }
+    .form-title-1{
+        top: 87.5em;
+    }
+}
+@media (max-width: 769px) {
+    .container-1 h1{
+        font-size: 2.5em;
+        padding-left: 1.35em;
+    }
+    .container-1 p{
+        font-size: 0.9em;
+    }
+    .menu-haqda-div h3{
+        font-size: 1em;
+    }
+    .menu-haqda-div p{
+        font-size: 0.7em;
+    }
+    .form-title-1{
+        top: 75em;
+    }
+}
+@media (max-width: 431px) {
+    .head-h{
+        background-image: url('Adsız tasarım (20).png');
+        height: 70vh;
+    }
+    .container-1{
+        width: 100%;
+        h1{
+            padding-left: 1em;
+        }
+        p{
+            padding-left: 2.8em;
+            padding-right: 2.8em;
+        }
+        button{
+            margin-left: 2em;
+        }
+    }
+    .menu-haqda{
+        height: 80vh;
+        .menu-haqda-div{
+            width: 100%;
+            gap: 0;
+            column-gap: 2em;
+            height: 80%;
+            flex-wrap: wrap;
+            .seher-yemeyi-div{
+                height: 50%;
+                width: 40%;
+                margin-left: 1.5em;
+            }
+            .burger-div{
+                height: 50%;
+                width: 40%;
+            }
+            .salatlar-div{
+                height: 50%;
+                width: 40%;
+                margin-left: 1.5em;
+            }
+            .izqara-div{
+                height: 50%;
+                width: 40%;
+            }
+        }
+    }
+    .menu-preview-section{
+        height: 170vh;
+    }
+    .about-prev-img-div{
+        img{
+            width: 10em;
+            margin-top: 0em;
+        }
+    }
+    .about-prev-title{
+        width: 100%;
+        height: 50%;
+        h1{
+            font-size: 2em;
+            margin-left: 0.5em;
+        }
+        p{
+            font-size: 0.9em;
+        }
+        button{
+            font-size: 1em;
+            margin-left: 3em;
+        }
+    }
+    .blog-div{
+        height: 70%;
+        div{
+            width: 40%;
+        }
+         #last-blog{
+            margin-left: 0;
+            margin-top: 1.5em;
+         }
+         button{
+            margin: 0;
+         }
+    }
+    .blog-title{
+        font-size: 2.2em;
+    }
+    .blog-p{
+        font-size: 0.8em;
+    }
+    .blog-section{
+        height: 100vh;
+    }
+    .form-title-1{
+        top: 136.5em;
+        font-size: 2.2em;
+    }
+}
+@media (max-width: 415px) {
+    .form-title-1{
+        top: 131em;
+    }
+}
+@media (max-width: 413px) {
+    .form-title-1{
+        top: 134em;
+    }
+}
+@media (max-width: 391px) {
+    .about-prev-title{
+        width: 100%;
+        height: 50%;
+        h1{
+            font-size: 1.9em;
+            margin-left: 0.5em;
+        }
+        p{
+            font-size: 0.8em;
+        }
+        button{
+            font-size: 1em;
+            margin-left: 3em;
+        }
+    }
+     .about-prev-img-div{
+        img{
+            width: 9em;
+            margin-top: 0em;
+        }
+    }
+    .blog-div{
+        height: 70%;
+        div{
+            width: 40%;
+            height: 30%;
+        }
+         #last-blog{
+            margin-left: 0;
+            margin-top: 1.5em;
+         }
+         button{
+            margin: 0;
+         }
+    }
+    .form-title-1{
+        top: 123.5em;
+    }
 }

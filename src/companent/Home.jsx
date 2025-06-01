@@ -7,13 +7,15 @@ import { TbSaladFilled } from "react-icons/tb";
 import { GiBarbecue } from "react-icons/gi";
 import { Link } from 'react-router-dom';
 import { FaInstagram } from "react-icons/fa";
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Select from 'react-select';  
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
 import { RiInstagramLine } from "react-icons/ri";
 import '../assets/css/home.css'
+import { LuMenu } from "react-icons/lu";
+import { IoMdClose } from "react-icons/io";
 
 
 
@@ -76,25 +78,42 @@ const Home = () => {
     navigate('/');
   };
 
+   const openMenu = () =>{
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+
+  const closeMenu = () =>{
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+
   return (
     <>
-    <header className='head'>
+    <header className='head-h'>
         <div className='div-bar'>
             <nav className='nav-bar'>
                 <img onClick={handleClick} className='danaburger-head-logo' src="Adsız_tasarım__6_-removebg-preview-removebg-preview (1).png" alt="" />
                 <div>
-                <ul className='list-menu'>
-                    <li className='list-item'><Link className='link-item1' to='/'>ANA SƏHİFƏ</Link></li>
-                    <li className='list-item'><Link className='link-item' to='/Menu'>MENYU</Link></li>
-                    <li className='list-item'><Link className='link-item' to='/About'>HAQQIMIZDA</Link></li>
-                    <li className='list-item'><Link className='link-item' to='/Contact'>ƏLAQƏ</Link></li>
+                <ul className='sidebar'>
+                    <IoMdClose onClick={closeMenu} className='menu-icon1' />
+                    <li className='list-item-ab'><Link className='link1-item' to='/'>ANA SƏHİFƏ</Link></li>
+                    <li className='list-item-ab'><Link className='link1-item' to='/Menu'>MENYU</Link></li>
+                    <li className='list-item-ab'><Link className='link1-item' to='/About'>HAQQIMIZDA</Link></li>
+                    <li className='list-item-ab'><Link className='link1-item' to='/Contact'>ƏLAQƏ</Link></li>
+                    <button className='OnlineZakaz-btn-ab-2'>Online Sifariş</button>
                 </ul>
-                {/* <IoPerson className='head-icon' style={{fontSize:"1.2em",marginLeft:"5em"}}/>
-                <FaShoppingCart className='head-icon' style={{fontSize:"1.2em",marginLeft:"1em"}}/>
-                <FaSearch className='head-icon' style={{fontSize:"1.2em",marginLeft:"1em"}}/> */}
-                <button onClick={goToWolt} className='OnlineZakaz-btn'>Online Sifariş</button>
+                <ul id='hideOnMobile' className='list-menu-ab'>
+                    
+                    <li className='list-item-ab'><Link className='link-item1' to='/'>ANA SƏHİFƏ</Link></li>
+                    <li className='list-item-ab'><Link className='link-item' to='/Menu'>MENYU</Link></li>
+                    <li className='list-item-ab'><Link className='link-item' to='/About'>HAQQIMIZDA</Link></li>
+                    <li className='list-item-ab'><Link className='link-item' to='/Contact'>ƏLAQƏ</Link></li>
+                </ul>
+                <button id='hideOnMobile' className='OnlineZakaz-btn-ab'>Online Sifariş</button>
                 </div>
             </nav>
+            <LuMenu id='menu-button' onClick={openMenu} className='menu-icon' />
         </div>
         <div className='container'>
           <div className='container-1'>
@@ -222,7 +241,7 @@ const Home = () => {
             <div className='overlay'><FaInstagram className='insta-icon-for-overlay'/></div>
             <img src="877682dd-1e2e-4c20-be83-d3da8f9e7a4b.jpg" alt="" />
           </div>
-          <div className='blog-divs' onClick={goToInsta}>
+          <div  id="last-blog" className='blog-divs' onClick={goToInsta}>
             <div className='overlay'><FaInstagram className='insta-icon-for-overlay'/></div>
             <img src="ae40c53e-1ee6-42e1-af82-27fa8d81fcb6.jpg" alt="" />
           </div>

@@ -497,3 +497,349 @@
   color: #dc3b20;
   padding-top: 0.2em;
 }
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 16em;
+    z-index: 999;
+    /* background: linear-gradient(0.95turn,#0d0e1050,#0f151550,#38424350);  */
+    background-color: rgba(255, 255, 255, 0.329);
+    backdrop-filter: blur(20px);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.16);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* transition: left 0.3s ease; */
+}
+.sidebar li{
+    padding-top: 1em;
+    padding-left: 2em;
+}
+.link1-item{
+    list-style: none;
+    font-size: 1.1em;
+    padding-right: 2.3em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.4s;
+    text-decoration: none;
+}
+.link1-item:hover{
+    color: #f6921f;
+    text-shadow: 0px 0px 20px #f6921f;
+}
+.menu-icon{
+    font-size: 2em;
+    margin-top: 0.73em;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.menu-icon:hover{
+    color: #f6921f;
+}
+.menu-icon1{
+    font-size: 2em;
+    margin-top: 0.73em;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    margin-left: 0.8em;
+    cursor: pointer;
+}
+.menu-icon1:hover{
+    color: #f6921f;
+}
+.OnlineZakaz-btn-ab-2{
+    width: 9em;
+    height: 2.4em;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-left: 1.8em;
+    border-radius: 20px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+    background-color: #f6921f;
+    color: white;
+    transition: 0.6s;
+}
+.OnlineZakaz-btn-ab-2:hover{
+    background-color: #dc3b20;
+    box-shadow: 0px 0px 20px #dc3b20;
+}
+
+#menu-button{
+    display: none;
+}
+.fooderos-img{
+  display: none;
+}
+
+
+@media (max-width: 1025px) {
+    #hideOnMobile{
+        display: none;
+    }
+    #menu-button{
+        display: block;
+    }
+    .menu-prev-div{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+    }
+    .helper-div{
+      height: 20%;
+    }
+    .helper-div img{
+      height: 80%;
+    }
+    .helper-div div{
+      height: 80%;
+    }
+    .helper-div h1{
+      font-size: 1em;
+      padding-top: 0;
+    }
+    .helper-div p{
+      font-size: 0.8em;
+    }
+    .helper-div2{
+      height: 20%;
+    }
+    .helper-div2 img{
+      height: 80%;
+    }
+    .helper-div2 div{
+      height: 80%;
+    }
+    .helper-div2 h1{
+      font-size: 1em;
+      padding-top: 0;
+    }
+    .helper-div2 p{
+      font-size: 0.8em;
+    }
+    .head-m{
+      height: 62.15vh;
+    }
+    .menu-section{
+      height: 60vh;
+    }
+    .gallery-container{
+      flex-direction: column;
+    }
+    .left-image{
+      width: 63.1em;
+      height: 45%;
+      margin-right: 0;
+      
+      .monyo-img{
+        display: none;
+      }
+      .fooderos-img{
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .buttons button{
+      margin-left: 1em;
+    }
+    .images{
+      margin-left: 0.5em;
+    }
+}
+@media (max-width: 821px) {
+  .helper-div h1{
+    font-size: 0.8em;
+  }
+  .helper-div p{
+    font-size: 0.7em;
+  }
+  .helper-div2 h1{
+    font-size: 0.8em;
+  }
+  .helper-div2 p{
+    font-size: 0.7em;
+  }
+  .helper-div2 div{
+    height: 80%;
+  }
+  .menu-section{
+    height: 65vh;
+  }
+  .buttons{
+    margin-top: 0;
+  }
+  .left-image{
+    width: 100%;
+    height: 40%;
+  }
+  .right-content{
+    flex-wrap: wrap;
+    margin-left: 2em;
+  }
+  .button-gallery{
+    height: 120vh;
+  }
+  .images{
+    gap: 2em;
+  }
+}
+@media (max-width: 769px) {
+  .head-m{
+    height: 75vh;
+  }
+  .helper-div{
+    height: 26%;
+  }
+  .helper-div2{
+    height: 26%;
+  }
+  .menu-section{
+    height: 80vh;
+  }
+  .button-gallery{
+    height: 128vh;
+  }
+  .left-image{
+    height: 35%;
+  }
+}
+@media (max-width: 431px) {
+  .menu-prev-div{
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200vh;
+  }
+  .helper-div{
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* background-color: re */
+    height: 60vh;
+  }
+  .helper-div img{
+    width: 50%;
+    height: 30%;
+  }
+  .helper-div div{
+    width: 50%;
+    height: 30%;
+  }
+  .head-m{
+    height: 163vh;
+  }
+    .helper-div2{
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    height: 60vh;
+    /* background-color: red; */
+    margin-top: 3em;
+  }
+  .helper-div2 img{
+    width: 50%;
+    height: 30%;
+  }
+  .helper-div2 div{
+    width: 50%;
+    height: 30%;
+  }
+  .menu-prev-title-div{
+    h1{
+      font-size: 2em;
+    }
+    p{
+      font-size: 0.9em;
+    }
+  }
+  .menu-section{
+    height: 113.5vh;
+  }
+  .button-gallery{
+    height: 170vh;
+  }
+  .left-image{
+    height: 20%;
+  }
+  .buttons{
+    margin-left: 1em;
+  }
+  .images{
+    margin-left: 1.5em;
+  }
+  .div-forfoot{
+        h3{
+            font-size: 0.6em;
+        }
+        h1{
+            font-size: 1.2em;
+        }
+        .div-for-icons div{
+           width: 2em;
+           height: 2em;
+           height: 35%;
+        }
+        .div-for-icons{
+            width: 100%;
+            background-repeat: no-repeat;
+            margin-left: 0.5em;
+            margin-top: 1em;
+        }
+        
+     }
+}
+@media (max-width: 391px) {
+  .button-gallery{
+    height: 190vh;
+  }
+  .images{
+    margin-left: 0.2em;
+  }
+  .buttons{
+    margin-left: 0.1em;
+  }
+  .head-m{
+    height: 164.5vh;
+  }
+  .menu-prev-title-div{
+    h1{
+      font-size: 2em;
+    }
+    p{
+      font-size: 0.8em;
+    }
+  }
+  .div-forfoot{
+        h3{
+            font-size: 0.6em;
+        }
+        h1{
+            font-size: 1.2em;
+        }
+        .div-for-icons div{
+           width: 2em;
+           height: 2em;
+           height: 35%;
+        }
+        .div-for-icons{
+            width: 100%;
+            background-repeat: no-repeat;
+            margin-left: 0.5em;
+            margin-top: 1em;
+        }
+        
+     }
+}

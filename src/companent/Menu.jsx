@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import { LuMenu } from "react-icons/lu";
+import { IoMdClose } from "react-icons/io";
 
 
 
@@ -127,6 +129,16 @@ const Menu = () => {
     window.open('https://wolt.com/az/aze/baku/restaurant/dana-burger-i-narimanov/dana-burger-itemid-62690e4075390cbed781a7ad?search=dana')
   }
 
+  const openMenu = () =>{
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+
+  const closeMenu = () =>{
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+
   return (
     <>
     <header className='head-m'>
@@ -134,18 +146,25 @@ const Menu = () => {
                 <nav className='nav-bar-m'>
                     <img onClick={handleImageClick} className='danaburger-head-logo-m' src="Adsız_tasarım__6_-removebg-preview-removebg-preview (1).png" alt="" />
                     <div>
-                    <ul className='list-menu-m'>
-                        <li className='list-item-m'><Link className='link-item' to='/'>ANA SƏHİFƏ</Link></li>
-                        <li className='list-item-m'><Link className='link-item1' to='/Menu'>MENYU</Link></li>
-                        <li className='list-item-m'><Link className='link-item' to='/About'>HAQQIMIZDA</Link></li>
-                        <li className='list-item-m'><Link className='link-item' to='/Contact'>ƏLAQƏ</Link></li>
-                    </ul>
-                    {/* <IoPerson className='head-icon' style={{fontSize:"1.2em",marginLeft:"5em"}}/>
-                    <FaShoppingCart className='head-icon' style={{fontSize:"1.2em",marginLeft:"1em"}}/>
-                    <FaSearch className='head-icon' style={{fontSize:"1.2em",marginLeft:"1em"}}/> */}
-                    <button className='OnlineZakaz-btn-m'>Online Sifariş</button>
+                    <ul className='sidebar'>
+                    <IoMdClose onClick={closeMenu} className='menu-icon1' />
+                    <li className='list-item-ab'><Link className='link1-item' to='/'>ANA SƏHİFƏ</Link></li>
+                    <li className='list-item-ab'><Link className='link1-item' to='/Menu'>MENYU</Link></li>
+                    <li className='list-item-ab'><Link className='link1-item' to='/About'>HAQQIMIZDA</Link></li>
+                    <li className='list-item-ab'><Link className='link1-item' to='/Contact'>ƏLAQƏ</Link></li>
+                    <button className='OnlineZakaz-btn-ab-2'>Online Sifariş</button>
+                </ul>
+                <ul id='hideOnMobile' className='list-menu-ab'>
+                    
+                    <li className='list-item-ab'><Link className='link-item' to='/'>ANA SƏHİFƏ</Link></li>
+                    <li className='list-item-ab'><Link className='link-item1' to='/Menu'>MENYU</Link></li>
+                    <li className='list-item-ab'><Link className='link-item' to='/About'>HAQQIMIZDA</Link></li>
+                    <li className='list-item-ab'><Link className='link-item' to='/Contact'>ƏLAQƏ</Link></li>
+                </ul>
+                <button id='hideOnMobile' className='OnlineZakaz-btn-ab'>Online Sifariş</button>
                     </div>
                 </nav>
+                <LuMenu id='menu-button' onClick={openMenu} className='menu-icon' />
             </div>
             <section className='menu-preview-section-m'>
        <div className='menu-prev-title-div'>
@@ -240,7 +259,8 @@ const Menu = () => {
        <div className="gallery-container">
       {/* Sol şəkil */}
       <div className="left-image">
-        <img src="https://monyo.az/uploads/a_back_img_119.jpg" alt="Dekor" />
+        <img className='monyo-img' src="https://monyo.az/uploads/a_back_img_119.jpg" alt="Dekor" />
+        <img className='fooderos-img' src="i2xpyohloz_1639045617.jpg" alt="" />
       </div>
 
       {/* Sağ hissə */}

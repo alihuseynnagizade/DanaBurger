@@ -4,6 +4,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoIosCall } from "react-icons/io";
 import { RiInstagramFill } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
+import { LuMenu } from "react-icons/lu";
+import { IoMdClose } from "react-icons/io";
 
 
 
@@ -28,8 +30,17 @@ const About = () => {
 
   const goToWolt = () => {
   window.open('https://wolt.com/az/aze/baku/restaurant/dana-burger-chi-guneshli?srsltid=AfmBOop_iIqhev6bi3-YlT-e2jNFly1dLeoF3lBJgVi4dOnRq_rusqYN');
-  };
+  };  
 
+  const openMenu = () =>{
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+
+  const closeMenu = () =>{
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
   return (
     <>
     <header className='head-ab'>
@@ -37,18 +48,25 @@ const About = () => {
             <nav className='nav-bar-ab'>
                 <img onClick={handleImageClick} className='danaburger-head-logo-ab' src="Adsız_tasarım__6_-removebg-preview-removebg-preview (1).png" alt="" />
                 <div>
-                <ul className='list-menu-ab'>
+                <ul className='sidebar'>
+                    <IoMdClose onClick={closeMenu} className='menu-icon1' />
+                    <li className='list-item-ab'><Link className='link1-item' to='/'>ANA SƏHİFƏ</Link></li>
+                    <li className='list-item-ab'><Link className='link1-item' to='/Menu'>MENYU</Link></li>
+                    <li className='list-item-ab'><Link className='link1-item' to='/About'>HAQQIMIZDA</Link></li>
+                    <li className='list-item-ab'><Link className='link1-item' to='/Contact'>ƏLAQƏ</Link></li>
+                    <button className='OnlineZakaz-btn-ab-2'>Online Sifariş</button>
+                </ul>
+                <ul id='hideOnMobile' className='list-menu-ab'>
+                    
                     <li className='list-item-ab'><Link className='link-item' to='/'>ANA SƏHİFƏ</Link></li>
                     <li className='list-item-ab'><Link className='link-item' to='/Menu'>MENYU</Link></li>
                     <li className='list-item-ab'><Link className='link-item1' to='/About'>HAQQIMIZDA</Link></li>
                     <li className='list-item-ab'><Link className='link-item' to='/Contact'>ƏLAQƏ</Link></li>
                 </ul>
-                {/* <IoPerson className='head-icon' style={{fontSize:"1.2em",marginLeft:"5em"}}/>
-                <FaShoppingCart className='head-icon' style={{fontSize:"1.2em",marginLeft:"1em"}}/>
-                <FaSearch className='head-icon' style={{fontSize:"1.2em",marginLeft:"1em"}}/> */}
-                <button className='OnlineZakaz-btn-ab'>Online Sifariş</button>
+                <button id='hideOnMobile' className='OnlineZakaz-btn-ab'>Online Sifariş</button>
                 </div>
             </nav>
+                <LuMenu id='menu-button' onClick={openMenu} className='menu-icon' />
         </div>
     </header>
     <section className='about-prev-section-ab'>
@@ -60,8 +78,7 @@ const About = () => {
         <p>Dana burger, fast food dünyasının ən sevilən və geniş yayılmış növlərindən biridir. Onun əsasını 100% saf dana ətindən hazırlanmış köftə təşkil edir. Bu keyfiyyətli mal əti burgerə həm zəngin və dərin bir ləzzət, həm də yüksək doyumluluq qazandırır. Dana burgerin digər burger növlərindən fərqi, onun ləzzətinin daha təbii və aromatik olmasıdır. Ətin təbii dadı, ədviyyatların düzgün balansı ilə birləşərək dad qönçələrində unudulmaz bir təəssürat yaradır.
 
 Adətən yumşaq və yüngül şəkildə qızardılmış iki çörək dilimi arasında təqdim olunan dana burgerin içərisinə kahı, təzə pomidor, turşu, pendir, qızarmış soğan və müxtəlif souslar əlavə olunaraq həm dad, həm də vizual baxımdan zənginləşdirilir. Bu burger həm klassik dad axtaranların, həm də yeni ləzzətlər kəşf etmək istəyənlərin seçimidir.
-
-Günümüzdə dana burger təkcə fast food restoranlarında deyil, həm də gurme məkanlarda və ev şəraitində də hazırlanır. Hər bir versiyası fərqli təqdimatla olsa da, əsas olan keyfiyyətli dana ətinin qorunmasıdır. Dana burger sadəcə bir yemək deyil, eyni zamanda doyurucu, qidalı və ləzzətli bir təcrübədir. O, həm sürətli qidalanmanın, həm də müasir qastronomiyanın vazkeçilməz simvoluna çevrilmişdir</p>
+</p>
         </div>
       </section>
       <footer className="foot-ab">
